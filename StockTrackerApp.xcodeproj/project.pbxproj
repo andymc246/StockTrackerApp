@@ -14,13 +14,13 @@
 		89D1E66D27A6471D009B2FA7 /* StockTrackerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E66C27A6471D009B2FA7 /* StockTrackerAppTests.swift */; };
 		89D1E67727A6471D009B2FA7 /* StockTrackerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E67627A6471D009B2FA7 /* StockTrackerAppUITests.swift */; };
 		89D1E67927A6471D009B2FA7 /* StockTrackerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E67827A6471D009B2FA7 /* StockTrackerAppUITestsLaunchTests.swift */; };
-		89D1E69A27A64987009B2FA7 /* RealStockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E69627A64987009B2FA7 /* RealStockQuoteManager.swift */; };
 		89D1E69E27A649B3009B2FA7 /* QuoteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E69C27A649B3009B2FA7 /* QuoteTypes.swift */; };
 		89D1E69F27A649B3009B2FA7 /* GlobalQuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E69D27A649B3009B2FA7 /* GlobalQuoteResponse.swift */; };
 		89D1E6A327A64AFC009B2FA7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6A227A64AFC009B2FA7 /* NetworkManager.swift */; };
 		89D1E6A527A64B89009B2FA7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6A427A64B89009B2FA7 /* APIManager.swift */; };
 		89D1E6A727A64C11009B2FA7 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6A627A64C11009B2FA7 /* QuoteManager.swift */; };
 		89D1E6A927A64CC4009B2FA7 /* MockStockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6A827A64CC4009B2FA7 /* MockStockQuoteManager.swift */; };
+		89D1E6AB27A64D42009B2FA7 /* RealStockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +51,13 @@
 		89D1E67227A6471D009B2FA7 /* StockTrackerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockTrackerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D1E67627A6471D009B2FA7 /* StockTrackerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppUITests.swift; sourceTree = "<group>"; };
 		89D1E67827A6471D009B2FA7 /* StockTrackerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89D1E69627A64987009B2FA7 /* RealStockQuoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealStockQuoteManager.swift; path = "../../../../../(old)StockTrackerApp/StockTrackerApp/StockTrackerApp/AppFeatures/StockQuotes/Managers/RealStockQuoteManager.swift"; sourceTree = "<group>"; };
 		89D1E69C27A649B3009B2FA7 /* QuoteTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuoteTypes.swift; path = "../../../../../(old)StockTrackerApp/StockTrackerApp/StockTrackerApp/AppFeatures/StockQuotes/Models/QuoteTypes.swift"; sourceTree = "<group>"; };
 		89D1E69D27A649B3009B2FA7 /* GlobalQuoteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalQuoteResponse.swift; path = "../../../../../(old)StockTrackerApp/StockTrackerApp/StockTrackerApp/AppFeatures/StockQuotes/Models/GlobalQuoteResponse.swift"; sourceTree = "<group>"; };
 		89D1E6A227A64AFC009B2FA7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		89D1E6A427A64B89009B2FA7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		89D1E6A627A64C11009B2FA7 /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		89D1E6A827A64CC4009B2FA7 /* MockStockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStockQuoteManager.swift; sourceTree = "<group>"; };
+		89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStockQuoteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,8 +238,8 @@
 			children = (
 				89D1E6A427A64B89009B2FA7 /* APIManager.swift */,
 				89D1E6A627A64C11009B2FA7 /* QuoteManager.swift */,
-				89D1E69627A64987009B2FA7 /* RealStockQuoteManager.swift */,
 				89D1E6A827A64CC4009B2FA7 /* MockStockQuoteManager.swift */,
+				89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -378,8 +378,8 @@
 				89D1E69F27A649B3009B2FA7 /* GlobalQuoteResponse.swift in Sources */,
 				89D1E6A927A64CC4009B2FA7 /* MockStockQuoteManager.swift in Sources */,
 				89D1E6A727A64C11009B2FA7 /* QuoteManager.swift in Sources */,
+				89D1E6AB27A64D42009B2FA7 /* RealStockQuoteManager.swift in Sources */,
 				89D1E6A527A64B89009B2FA7 /* APIManager.swift in Sources */,
-				89D1E69A27A64987009B2FA7 /* RealStockQuoteManager.swift in Sources */,
 				89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */,
 				89D1E69E27A649B3009B2FA7 /* QuoteTypes.swift in Sources */,
 				89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */,
