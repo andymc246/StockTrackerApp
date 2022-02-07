@@ -21,6 +21,7 @@
 		89D1E6AB27A64D42009B2FA7 /* RealStockQuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */; };
 		89D1E6AD27A64DF5009B2FA7 /* GlobalQuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AC27A64DF5009B2FA7 /* GlobalQuoteResponse.swift */; };
 		89D1E6AF27A64E31009B2FA7 /* QuoteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AE27A64E31009B2FA7 /* QuoteTypes.swift */; };
+		89D1E6B227A65030009B2FA7 /* TopViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealStockQuoteManager.swift; sourceTree = "<group>"; };
 		89D1E6AC27A64DF5009B2FA7 /* GlobalQuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalQuoteResponse.swift; sourceTree = "<group>"; };
 		89D1E6AE27A64E31009B2FA7 /* QuoteTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTypes.swift; sourceTree = "<group>"; };
+		89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		89D1E69027A648E6009B2FA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				89D1E6B027A64FED009B2FA7 /* HomeScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,14 @@
 				89D1E6AA27A64D42009B2FA7 /* RealStockQuoteManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		89D1E6B027A64FED009B2FA7 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +393,7 @@
 				89D1E6AB27A64D42009B2FA7 /* RealStockQuoteManager.swift in Sources */,
 				89D1E6A527A64B89009B2FA7 /* APIManager.swift in Sources */,
 				89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */,
+				89D1E6B227A65030009B2FA7 /* TopViewLayout.swift in Sources */,
 				89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
