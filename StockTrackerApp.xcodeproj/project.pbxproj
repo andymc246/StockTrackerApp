@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		891E18A027B22D330062823D /* SearchViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E189F27B22D330062823D /* SearchViewLayout.swift */; };
+		891E18DD27B4257F0062823D /* QuoteBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DC27B4257F0062823D /* QuoteBlock.swift */; };
 		89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */; };
 		89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65D27A6471B009B2FA7 /* ContentView.swift */; };
 		89D1E66027A6471D009B2FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D1E65F27A6471D009B2FA7 /* Assets.xcassets */; };
@@ -22,6 +24,7 @@
 		89D1E6AD27A64DF5009B2FA7 /* GlobalQuoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AC27A64DF5009B2FA7 /* GlobalQuoteResponse.swift */; };
 		89D1E6AF27A64E31009B2FA7 /* QuoteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AE27A64E31009B2FA7 /* QuoteTypes.swift */; };
 		89D1E6B227A65030009B2FA7 /* TopViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */; };
+		89E6742B27B21C850053019D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6742A27B21C850053019D /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		891E189F27B22D330062823D /* SearchViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewLayout.swift; sourceTree = "<group>"; };
+		891E18DC27B4257F0062823D /* QuoteBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBlock.swift; sourceTree = "<group>"; };
 		89D1E65827A6471B009B2FA7 /* StockTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppApp.swift; sourceTree = "<group>"; };
 		89D1E65D27A6471B009B2FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 		89D1E6AC27A64DF5009B2FA7 /* GlobalQuoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalQuoteResponse.swift; sourceTree = "<group>"; };
 		89D1E6AE27A64E31009B2FA7 /* QuoteTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTypes.swift; sourceTree = "<group>"; };
 		89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewLayout.swift; sourceTree = "<group>"; };
+		89E6742A27B21C850053019D /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				89D1E6A227A64AFC009B2FA7 /* NetworkManager.swift */,
+				89E6742A27B21C850053019D /* TextField.swift */,
 			);
 			path = AppUtilities;
 			sourceTree = "<group>";
@@ -251,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */,
+				891E189F27B22D330062823D /* SearchViewLayout.swift */,
+				891E18DC27B4257F0062823D /* QuoteBlock.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -386,8 +395,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D1E6AD27A64DF5009B2FA7 /* GlobalQuoteResponse.swift in Sources */,
+				89E6742B27B21C850053019D /* TextField.swift in Sources */,
 				89D1E6A327A64AFC009B2FA7 /* NetworkManager.swift in Sources */,
 				89D1E6AF27A64E31009B2FA7 /* QuoteTypes.swift in Sources */,
+				891E18DD27B4257F0062823D /* QuoteBlock.swift in Sources */,
+				891E18A027B22D330062823D /* SearchViewLayout.swift in Sources */,
 				89D1E6A927A64CC4009B2FA7 /* MockStockQuoteManager.swift in Sources */,
 				89D1E6A727A64C11009B2FA7 /* QuoteManager.swift in Sources */,
 				89D1E6AB27A64D42009B2FA7 /* RealStockQuoteManager.swift in Sources */,
