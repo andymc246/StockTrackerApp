@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC0056BACB6CC3EE0CB6589 /* Pods_StockTrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */; };
+		891325FB27B5F6D800A1C768 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891325FA27B5F6D800A1C768 /* LoginScreen.swift */; };
 		891E18A027B22D330062823D /* SearchViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E189F27B22D330062823D /* SearchViewLayout.swift */; };
 		891E18DD27B4257F0062823D /* QuoteBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DC27B4257F0062823D /* QuoteBlock.swift */; };
+		891E18DF27B42CD10062823D /* MiniQuoteBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DE27B42CD10062823D /* MiniQuoteBarLayout.swift */; };
+		8935ECA727B75FA900CCF5B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8935ECA627B75FA900CCF5B3 /* GoogleService-Info.plist */; };
 		89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */; };
 		89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65D27A6471B009B2FA7 /* ContentView.swift */; };
 		89D1E66027A6471D009B2FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D1E65F27A6471D009B2FA7 /* Assets.xcassets */; };
@@ -45,8 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24333405ED96A0638579E9CD /* Pods-StockTrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.release.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.release.xcconfig"; sourceTree = "<group>"; };
+		2A7DE94A795211CD030502F1 /* Pods-StockTrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.debug.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891325FA27B5F6D800A1C768 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		891E189F27B22D330062823D /* SearchViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewLayout.swift; sourceTree = "<group>"; };
 		891E18DC27B4257F0062823D /* QuoteBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBlock.swift; sourceTree = "<group>"; };
+		891E18DE27B42CD10062823D /* MiniQuoteBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQuoteBarLayout.swift; sourceTree = "<group>"; };
+		8935ECA627B75FA900CCF5B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89D1E65827A6471B009B2FA7 /* StockTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppApp.swift; sourceTree = "<group>"; };
 		89D1E65D27A6471B009B2FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC0056BACB6CC3EE0CB6589 /* Pods_StockTrackerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E6BE6EE7BC5C204BDB20B11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		891325F927B5F6B600A1C768 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				891325FA27B5F6D800A1C768 /* LoginScreen.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
 		89D1E64F27A6471B009B2FA7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +127,8 @@
 				89D1E66B27A6471D009B2FA7 /* StockTrackerAppTests */,
 				89D1E67527A6471D009B2FA7 /* StockTrackerAppUITests */,
 				89D1E65927A6471B009B2FA7 /* Products */,
+				A4E198FCAB8D7BED01F01F8E /* Pods */,
+				3E6BE6EE7BC5C204BDB20B11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +150,7 @@
 				89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */,
 				89D1E65D27A6471B009B2FA7 /* ContentView.swift */,
 				89D1E65F27A6471D009B2FA7 /* Assets.xcassets */,
+				8935ECA627B75FA900CCF5B3 /* GoogleService-Info.plist */,
 				89D1E66127A6471D009B2FA7 /* Preview Content */,
 			);
 			path = StockTrackerApp;
@@ -163,6 +193,7 @@
 		89D1E68727A64841009B2FA7 /* AppFeatures */ = {
 			isa = PBXGroup;
 			children = (
+				891325F927B5F6B600A1C768 /* Registration */,
 				89D1E68827A64856009B2FA7 /* NewsSection */,
 				89D1E68927A64863009B2FA7 /* SearchBar */,
 				89D1E68A27A64873009B2FA7 /* StockQuotes */,
@@ -260,8 +291,18 @@
 				89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */,
 				891E189F27B22D330062823D /* SearchViewLayout.swift */,
 				891E18DC27B4257F0062823D /* QuoteBlock.swift */,
+				891E18DE27B42CD10062823D /* MiniQuoteBarLayout.swift */,
 			);
 			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		A4E198FCAB8D7BED01F01F8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A7DE94A795211CD030502F1 /* Pods-StockTrackerApp.debug.xcconfig */,
+				24333405ED96A0638579E9CD /* Pods-StockTrackerApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89D1E67C27A6471D009B2FA7 /* Build configuration list for PBXNativeTarget "StockTrackerApp" */;
 			buildPhases = (
+				D49FA57D0008DCDE66A451C6 /* [CP] Check Pods Manifest.lock */,
 				89D1E65427A6471B009B2FA7 /* Sources */,
 				89D1E65527A6471B009B2FA7 /* Frameworks */,
 				89D1E65627A6471B009B2FA7 /* Resources */,
+				A91AB6340C909EDF2A42A92D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,6 +413,7 @@
 			files = (
 				89D1E66327A6471D009B2FA7 /* Preview Assets.xcassets in Resources */,
 				89D1E66027A6471D009B2FA7 /* Assets.xcassets in Resources */,
+				8935ECA727B75FA900CCF5B3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +433,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A91AB6340C909EDF2A42A92D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49FA57D0008DCDE66A451C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockTrackerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89D1E65427A6471B009B2FA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -407,6 +493,8 @@
 				89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */,
 				89D1E6B227A65030009B2FA7 /* TopViewLayout.swift in Sources */,
 				89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */,
+				891E18DF27B42CD10062823D /* MiniQuoteBarLayout.swift in Sources */,
+				891325FB27B5F6D800A1C768 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +649,7 @@
 		};
 		89D1E67D27A6471D009B2FA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7DE94A795211CD030502F1 /* Pods-StockTrackerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -590,6 +679,7 @@
 		};
 		89D1E67E27A6471D009B2FA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24333405ED96A0638579E9CD /* Pods-StockTrackerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

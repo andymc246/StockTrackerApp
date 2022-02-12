@@ -27,18 +27,18 @@ struct TopViewLayout: View {
     var body: some View {
         HStack { //arranges its children view in a horizontal line
             VStack (alignment: .leading, spacing: -5) { //arranges its children view in a vertical line
-                Text ("Welcome to MyStockApp")
+                Text ("MyStockApp")
                     .foregroundColor(.white)
                     .bold()
                 
-                Text ("")
+               // Text ("")
                 
                 Text ("Design by Andy Mac")
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                     .fontWeight(.light)
                     .font(.caption)
             
-                Text ("")
+              //  Text ("")
                 
                 Text ("\(Date(), formatter: dataFormatter)")
                 .foregroundColor(.gray)

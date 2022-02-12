@@ -7,6 +7,12 @@
 
 import Foundation
 
+//makes quotes in miniquotebarlayout class identifiable  
+extension Quote: Identifiable {
+    var id: UUID {
+        return UUID()
+    }
+}
 
 struct Quote: Codable {
     //initalizing the variable types for stock quotes
@@ -29,4 +35,7 @@ struct Quote: Codable {
         case changePercent = "10. change percent"
         
     }
+    
 }
+
+
