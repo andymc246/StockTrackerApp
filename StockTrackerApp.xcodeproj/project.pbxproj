@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FC0056BACB6CC3EE0CB6589 /* Pods_StockTrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */; };
 		891325FB27B5F6D800A1C768 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891325FA27B5F6D800A1C768 /* LoginScreen.swift */; };
 		891E18A027B22D330062823D /* SearchViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E189F27B22D330062823D /* SearchViewLayout.swift */; };
 		891E18DD27B4257F0062823D /* QuoteBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DC27B4257F0062823D /* QuoteBlock.swift */; };
@@ -29,6 +28,7 @@
 		89D1E6AF27A64E31009B2FA7 /* QuoteTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6AE27A64E31009B2FA7 /* QuoteTypes.swift */; };
 		89D1E6B227A65030009B2FA7 /* TopViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E6B127A65030009B2FA7 /* TopViewLayout.swift */; };
 		89E6742B27B21C850053019D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E6742A27B21C850053019D /* TextField.swift */; };
+		95AC4115C6F61A6B92FE8443 /* Pods_StockTrackerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ABB0B9AF0F4A61132751499 /* Pods_StockTrackerApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		24333405ED96A0638579E9CD /* Pods-StockTrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.release.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.release.xcconfig"; sourceTree = "<group>"; };
 		2A7DE94A795211CD030502F1 /* Pods-StockTrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.debug.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
-		2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ABB0B9AF0F4A61132751499 /* Pods_StockTrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		891325FA27B5F6D800A1C768 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		891E189F27B22D330062823D /* SearchViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewLayout.swift; sourceTree = "<group>"; };
 		891E18DC27B4257F0062823D /* QuoteBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBlock.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FC0056BACB6CC3EE0CB6589 /* Pods_StockTrackerApp.framework in Frameworks */,
+				95AC4115C6F61A6B92FE8443 /* Pods_StockTrackerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 		3E6BE6EE7BC5C204BDB20B11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B4AAA4F9864E51B563D2E49 /* Pods_StockTrackerApp.framework */,
+				4ABB0B9AF0F4A61132751499 /* Pods_StockTrackerApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				89D1E65427A6471B009B2FA7 /* Sources */,
 				89D1E65527A6471B009B2FA7 /* Frameworks */,
 				89D1E65627A6471B009B2FA7 /* Resources */,
-				A91AB6340C909EDF2A42A92D /* [CP] Embed Pods Frameworks */,
+				578CC92EE1585D07A27121D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -434,7 +434,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A91AB6340C909EDF2A42A92D /* [CP] Embed Pods Frameworks */ = {
+		578CC92EE1585D07A27121D8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
