@@ -100,7 +100,7 @@ struct SignInLayout: View {
             Image("Image-1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 250, height: 250)
+                .frame(width: 200, height: 200)
             
             VStack {
                 //email input as a secure field
@@ -171,7 +171,7 @@ struct SignUpLayout: View {
             Image("Image-2")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 250, height: 250)
+                .frame(width: 200, height: 200)
             
             
             VStack {
