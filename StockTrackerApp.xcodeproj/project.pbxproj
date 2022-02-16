@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8901BE2727BB00E300E557FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8901BE2627BB00E300E557FB /* GoogleService-Info.plist */; };
 		891325FB27B5F6D800A1C768 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891325FA27B5F6D800A1C768 /* LoginScreen.swift */; };
 		891E18A027B22D330062823D /* SearchViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E189F27B22D330062823D /* SearchViewLayout.swift */; };
 		891E18DD27B4257F0062823D /* QuoteBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DC27B4257F0062823D /* QuoteBlock.swift */; };
 		891E18DF27B42CD10062823D /* MiniQuoteBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E18DE27B42CD10062823D /* MiniQuoteBarLayout.swift */; };
-		8935ECAB27B7637D00CCF5B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8935ECAA27B7637D00CCF5B3 /* GoogleService-Info.plist */; };
 		89D1E65C27A6471B009B2FA7 /* StockTrackerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */; };
 		89D1E65E27A6471B009B2FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1E65D27A6471B009B2FA7 /* ContentView.swift */; };
 		89D1E66027A6471D009B2FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89D1E65F27A6471D009B2FA7 /* Assets.xcassets */; };
@@ -52,11 +52,11 @@
 		24333405ED96A0638579E9CD /* Pods-StockTrackerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.release.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.release.xcconfig"; sourceTree = "<group>"; };
 		2A7DE94A795211CD030502F1 /* Pods-StockTrackerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTrackerApp.debug.xcconfig"; path = "Target Support Files/Pods-StockTrackerApp/Pods-StockTrackerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4ABB0B9AF0F4A61132751499 /* Pods_StockTrackerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTrackerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8901BE2627BB00E300E557FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		891325FA27B5F6D800A1C768 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		891E189F27B22D330062823D /* SearchViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewLayout.swift; sourceTree = "<group>"; };
 		891E18DC27B4257F0062823D /* QuoteBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteBlock.swift; sourceTree = "<group>"; };
 		891E18DE27B42CD10062823D /* MiniQuoteBarLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniQuoteBarLayout.swift; sourceTree = "<group>"; };
-		8935ECAA27B7637D00CCF5B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		89D1E65827A6471B009B2FA7 /* StockTrackerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTrackerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTrackerAppApp.swift; sourceTree = "<group>"; };
 		89D1E65D27A6471B009B2FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 				89D1E68527A6476C009B2FA7 /* AppUtilities */,
 				89D1E68727A64841009B2FA7 /* AppFeatures */,
 				89D1E65B27A6471B009B2FA7 /* StockTrackerAppApp.swift */,
+				8901BE2627BB00E300E557FB /* GoogleService-Info.plist */,
 				89D1E65D27A6471B009B2FA7 /* ContentView.swift */,
-				8935ECAA27B7637D00CCF5B3 /* GoogleService-Info.plist */,
 				89D1E65F27A6471D009B2FA7 /* Assets.xcassets */,
 				89D1E66127A6471D009B2FA7 /* Preview Content */,
 			);
@@ -413,7 +413,7 @@
 			files = (
 				89D1E66327A6471D009B2FA7 /* Preview Assets.xcassets in Resources */,
 				89D1E66027A6471D009B2FA7 /* Assets.xcassets in Resources */,
-				8935ECAB27B7637D00CCF5B3 /* GoogleService-Info.plist in Resources */,
+				8901BE2727BB00E300E557FB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

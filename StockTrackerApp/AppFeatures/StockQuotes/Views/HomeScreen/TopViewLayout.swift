@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import FirebaseAuth  //******
 
 struct TopViewLayout: View {
+    
+    let auth = Auth.auth() //******
+    
+    var sIn = false //********
     
     //creating a date formatting section
     private let dataFormatter: DateFormatter = {
@@ -24,10 +29,17 @@ struct TopViewLayout: View {
     @State private var showSearchHistory = false
     
     
+    func signOut() { //**********
+        try? auth.signOut()
+        //sIn = false
+    }
+    
+    @EnvironmentObject var viewModel: AppLayoutModel
+    
     var body: some View {
         HStack { //arranges its children view in a horizontal line
             VStack (alignment: .leading, spacing: -5) { //arranges its children view in a vertical line
-                Text ("MyStockApp")
+                Text ("StockApp")
                     .foregroundColor(.white)
                     .bold()
                 
@@ -60,6 +72,18 @@ struct TopViewLayout: View {
             .sheet(isPresented: $showSearchHistory, content: {
                 Text ("This is the search view area")
             })
+            
+            Button (action: {
+                viewModel.signOut()
+                
+            },label: {
+                Text("Sign Out")
+                    .frame(width: 80, height: 20)
+                    .background(Color.black)
+                    .foregroundColor(Color.teal)
+                    .padding()
+            })
+    
             
         }
         .background(Color.black)

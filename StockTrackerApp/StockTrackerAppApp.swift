@@ -11,15 +11,25 @@ import Firebase //importing firebase into my swift project
 @main
 struct StockTrackerAppApp: App {
     
+    @State var stocks = ["",""]
+    
     //managed interaction with the app system
     @UIApplicationDelegateAdaptor (AppDelegate.self) var appDelegate
     
-    
-    
-    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = AppLayoutModel()
+            
+            LoginScreen()
+                .environmentObject(viewModel)
+            
+            //TopViewLayout(stocks: $stocks)
+           //     .environmentObject(viewModel)
+            
+           // if viewModel.signedIn {
+               // ContentView()
+            //}
+                            
         }
     }
 }
