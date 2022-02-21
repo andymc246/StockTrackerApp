@@ -49,10 +49,11 @@ struct ContentView: View {
                     
                 }
                 
+                
                 List {
                     Group {
                         SearchViewLayout(searchWord: $searchWord) //bring up the search view layout UI
-                            
+                            //.padding()
                         
                         ForEach(get_Quotes()) { quote in
                             QuoteBlock(quote: quote) //brings up the quote block UI on the right side
