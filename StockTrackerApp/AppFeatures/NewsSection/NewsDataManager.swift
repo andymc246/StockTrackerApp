@@ -39,7 +39,5 @@ final class NewsDataManager: ObservableObject {
             }
         }
     }
-    
 
-    
 }
