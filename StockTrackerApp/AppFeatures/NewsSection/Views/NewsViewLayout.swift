@@ -5,6 +5,7 @@
 //  Created by Andy Mac on 2/22/22.
 //
 
+//this class activates the news from the API website to appear when the news tab/section is open
 import SwiftUI
 
 struct NewsViewLayout: View {
@@ -32,14 +33,16 @@ struct NewsViewLayout: View {
             //zstack- overlapping or overlaying content/view
             ZStack {
                 Color.white
-                Rectangle().fill(Color.black.opacity(0.70))
+                Rectangle().fill(Color.black.opacity(0.9))
                 
                 //Vertical Stack view
                 VStack (alignment: .leading) {
-                    //this is the headerview area
+                    NewsTopPortionLayout()
                     
                     Spacer()
-                        //the list view of the UI table view
+                    
+                    NewsCatalogLayout(news_Manager: news_Manager)
+                    
                 }
                 .padding()
             }

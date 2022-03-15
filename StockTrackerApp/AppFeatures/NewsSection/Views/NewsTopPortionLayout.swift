@@ -14,13 +14,13 @@ struct NewsTopPortionLayout: View {
         VStack (alignment: .leading) {
             Text ("Top Market News")
                 .font(.title)
-                .foregroundColor(.white.opacity(0.7))
+                .foregroundColor(.blue.opacity(0.7))
             
             //Horizontal Layout Acton
-            HStack (spacing: 2.5) {
+            HStack (spacing: 5) {
                 Text ("From")
-                Image (systemName: "chart.bar.doc.horizontal")
                 Text ("NewsAPI.org")
+                Image (systemName: "chart.bar.doc.horizontal")
             }
             .font(.title2)
             .foregroundColor(.gray.opacity(0.7))
