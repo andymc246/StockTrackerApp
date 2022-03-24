@@ -100,11 +100,11 @@ struct SignInLayout: View {
             Image("Image-1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 200, height: 200)
+                .frame(width: 160, height: 160)
             
             VStack {
                 //email input as a secure field
-                SecureField ("Secure Email", text: $email)
+                TextField ("Secure Email", text: $email)
                 //Text("You entered: \(email_Input)")
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
@@ -168,15 +168,15 @@ struct SignUpLayout: View {
     
     var body: some View {
         VStack {
-            Image("Image-2")
+            Image("Image-1")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 200, height: 200)
+                .frame(width: 160, height: 160)
             
             
             VStack {
                 //email input as a secure field
-                SecureField ("Secure Email", text: $email)
+                TextField ("Secure Email", text: $email)
                 //Text("You entered: \(email_Input)")
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
