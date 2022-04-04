@@ -12,7 +12,7 @@ struct SearchViewLayout: View {
     @Binding var searchWord: String
      
     var body: some View {
-        TextField(place_Holder_Text: Text("Search").foregroundColor(Color.blue), text: $searchWord)
+        CusTextField(place_Holder_Text: Text("Search").foregroundColor(Color.blue), text: $searchWord)
             .foregroundColor(.white)
             .padding(.leading, 10)
             .frame(height: 30)
