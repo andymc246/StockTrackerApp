@@ -17,7 +17,7 @@ final class MockStockQuoteManager: QuoteManager, ObservableObject {
         let tsla = Quote (symbol: "TSLA", open: "935.00", high: "946.27", low: "920.00", price: "931.22", change: "+8.89", changePercent: "0.98%")
         
         //creating a for loop that runs through the parameters of each stock quotes in this mock file
-        for _ in 0..<8 {
+        for _ in 0..<9 {
             quotes.append(contentsOf: [aapl, tsla])
         }
     }

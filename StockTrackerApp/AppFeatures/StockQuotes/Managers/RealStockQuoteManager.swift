@@ -16,7 +16,7 @@ final class RealStockQuoteManager: QuoteManager, ObservableObject {
         var backendQuotes = [Quote]()
         
         //creating a queue for downloading stock quote because the global quote API can only call 1 API at a time
-        let downloadingQueue = DispatchQueue (label: "com.macattack.downloadingQueue")
+        let downloadingQueue = DispatchQueue (label: "com.mac.downloadingQueue")
         
         //creating a downloading group that notifies me when all the downloads are done
         let downloadingGroup = DispatchGroup()
@@ -24,10 +24,10 @@ final class RealStockQuoteManager: QuoteManager, ObservableObject {
         stocks.forEach {
             (stock) in
             downloadingGroup.enter() //go inside the downloading group which contains the dispatch group
-            let url = URL(string: APIManager.quoteSearchUrl(for: stock))
+            let url = URL(string: APIManager.quoteSearchUrl(for: stock))!
             //first time calling the NetworkManager
             //print error if sesrching for stock quote does not fit requirements
-            NetworkManager<GlobalQuoteResponse>().fetch(from: url!) {
+            NetworkManager<GlobalQuoteResponse>().fetch(from: url) {
                 (result) in
                 switch result {
                 case .failure(let err):
@@ -36,9 +36,9 @@ final class RealStockQuoteManager: QuoteManager, ObservableObject {
                         downloadingGroup.leave()
                     }
                 //print if successful
-                case .success(let response):
+                case .success(let resp):
                     downloadingQueue.async {
-                        backendQuotes.append(response.quote)
+                        backendQuotes.append(resp.quote)
                         downloadingGroup.leave()
                     }
                     

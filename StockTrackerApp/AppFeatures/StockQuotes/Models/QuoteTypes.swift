@@ -7,13 +7,6 @@
 
 import Foundation
 
-//makes quotes in miniquotebarlayout class identifiable  
-extension Quote: Identifiable {
-    var id: UUID {
-        return UUID()
-    }
-}
-
 struct Quote: Codable {
     //initalizing the variable types for stock quotes
     var symbol: String
@@ -39,3 +32,10 @@ struct Quote: Codable {
 }
 
 
+//makes quotes in miniquotebarlayout class identifiable
+extension Quote: Identifiable {
+    var id: UUID {
+        return UUID()
+    }
+    
+}

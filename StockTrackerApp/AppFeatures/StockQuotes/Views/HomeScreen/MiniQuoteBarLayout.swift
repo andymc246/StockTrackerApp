@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MiniQuoteBarLayout: View {
-    @ObservedObject var stock_Quotes: MockStockQuoteManager
+    @ObservedObject var stock_Quotes: RealStockQuoteManager
     var body: some View {
         
         //allow horizontal movement for the mini quote navigation bar
@@ -31,14 +31,14 @@ struct MiniQuoteBarLayout: View {
                             //makes "price change" green if above previous market closing price, else turns red
                             .background(RoundedRectangle(cornerRadius: 5).fill(Double(quote.change)! > 0.0 ? Color.green : Color.red), alignment: .trailing)
                         
-                        Text("")
-                        Text(quote.changePercent) //prints out stock price change percentage
-                            .frame(width: 80)
-                            .font(.subheadline)
-                            .padding(.horizontal)
+                        //Text("")
+                        //Text(quote.changePercent) //prints out stock price change percentage
+                            //.frame(width: 80)
+                            //.font(.subheadline)
+                            //.padding(.horizontal)
                             
                             //makes "price change percentage" green if above previous market closing price, else turns red
-                            .background(RoundedRectangle(cornerRadius: 5).fill(Double(quote.change)! > 0.0 ? Color.green : Color.red), alignment: .trailing)
+                            //.background(RoundedRectangle(cornerRadius: 5).fill(Double(quote.change)! > 0.0 ? Color.green : Color.red), alignment: .trailing)
                             
                     }
                     .background(RoundedRectangle(cornerRadius: 10)
@@ -55,9 +55,4 @@ struct MiniQuoteBarLayout: View {
     }
 }
 
-struct MiniQuoteBarLayout_Previews: PreviewProvider {
-    static var previews: some View {
-        MiniQuoteBarLayout(stock_Quotes: MockStockQuoteManager())
-                                                                
-    }
-}
+
