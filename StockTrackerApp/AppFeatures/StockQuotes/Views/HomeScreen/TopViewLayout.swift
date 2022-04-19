@@ -64,13 +64,17 @@ struct TopViewLayout: View {
             Button {
                 showSearchHistory.toggle()
             }
+            
             label: {
                 Image(systemName: "pencil.circle.fill")
                 .font(.title)
                 .foregroundColor(.blue)
             }
-            .sheet(isPresented: $showSearchHistory, content: {
-                Text ("This is the search view area")
+        
+            .sheet(isPresented: $showSearchHistory, onDismiss: {
+                self.stocks = DefaultManager.shared.savedTickers
+            },content: {
+                SearchBarLayout()
             })
             
             Button (action: {
@@ -95,7 +99,8 @@ struct TopViewLayout: View {
 struct TopViewLayout_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TopViewLayout(stocks: .constant(["AAPL", "TSLA"]))
+            TopViewLayout(stocks: .constant([]))
+            
         }
     }
 }
