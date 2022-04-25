@@ -20,9 +20,7 @@ final class NetworkManager <T: Codable> {
             
             //first case
             //create an object called error that has no value
-            guard error == nil
-            
-            else {
+            guard error == nil else {
                 //abort the program or exit if error occurrs
                 completion (.failure(.error(err: error!.localizedDescription)))
                 return

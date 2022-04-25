@@ -31,12 +31,20 @@ struct APIManager {
     private static func urlFrom (symbol: SymbolFunc, searchKey: String) -> String {
         switch symbol {
         case .search:
+            
+            //print ("\(startingUrl)function=\(symbol.rawValue)&apikey=\(key)&keywords=\(searchKey)")
+            
             //returns the url link in variable startingUrl followed by the parameters in SYMBOL_SEARCH
             return "\(startingUrl)function=\(symbol.rawValue)&apikey=\(key)&keywords=\(searchKey)"
             
+        
         case .quote:
+            
+            //print ("\(startingUrl)function=\(symbol.rawValue)&apikey=\(key)&symbol=\(searchKey)")
+            
             //returns the url link in variable startingUrl followed by the parameters in GLOBAL_QUOTE
             return "\(startingUrl)function=\(symbol.rawValue)&apikey=\(key)&symbol=\(searchKey)"
+            
         }
     }
     
@@ -53,6 +61,6 @@ struct APIManager {
 //this will look for certain keywords of the stock ticker symbol
 extension APIManager {
     static var key: String {
-        return ""
+        return "BWEY531S5RATT0OD"
     }
 }
