@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var stock_Quote_Manager = MockStockQuoteManager()
-        //RealStockQuoteManager()
+    @ObservedObject var stock_Quote_Manager = RealStockQuoteManager()
+    @ObservedObject var news_Manager = NewsDataManager()
     
     // @State allows developer to modify values inside a struct
-    @State var stocks = ["AAPL", "TSLA"]
+    @State var stocks = DefaultManager.shared.savedTickers
     @State var old_Search_Stocks = [String]() //keep track of old stocks that were downloaded
     @State var searchWord = ""
     @State var news_Section = false //when the news section is open
@@ -58,6 +58,7 @@ struct ContentView: View {
                         ForEach(get_Quotes()) { quote in
                             QuoteBlock(quote: quote) //brings up the quote block UI on the right side
                         }
+                        .onDelete(perform: removeRows)
                     }
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets())
@@ -67,13 +68,16 @@ struct ContentView: View {
                     old_Search_Stocks = stocks
                 }
                 .onChange(of: stocks, perform: { value in
-                    
+                    get_Data(for: stocks.differenceOfSections(from: old_Search_Stocks))
+                    old_Search_Stocks = stocks
                 })
                 .listStyle(PlainListStyle())
                 .foregroundColor(.white)
             }
             .padding (.horizontal, 30)
             .padding(.bottom, UIScreen.main.bounds.height*0.21)
+            
+            NewsViewLayout (newsTabOpen: $news_Section, news_Manager: news_Manager)
             
         }
         .edgesIgnoringSafeArea(.all) //fill the entire screen in black background
@@ -92,6 +96,9 @@ struct ContentView: View {
         }
     }
     
+    private func removeRows (at offsets: IndexSet) {
+        stock_Quote_Manager.quotes.remove(atOffsets: offsets)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
